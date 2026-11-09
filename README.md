@@ -2,6 +2,8 @@
 
 用于测试 Git 配置、熟悉版本控制流程的练习仓库。你可以在这里练习提交、分支和远程同步，逐步掌握 Git 的基本用法。
 
+远程仓库：[hxinyun0-beep/test_rep](https://github.com/hxinyun0-beep/test_rep)。
+
 ## 项目目的
 
 - **验证环境**：检查 Git 是否安装成功，以及提交者姓名、邮箱是否配置正确。
@@ -27,10 +29,10 @@ git --version
 
 **方式 A：下载已有的远程仓库**
 
-将下面的示例地址替换为实际仓库地址，再执行：
+执行以下命令，将本仓库下载到本地：
 
 ```bash
-git clone [https://github.com/YOUR_NAME/test_rep.git](https://github.com/hxinyun0-beep/test_rep.git)
+git clone https://github.com/hxinyun0-beep/test_rep.git
 cd test_rep
 ```
 
@@ -164,11 +166,13 @@ git remote -v
 
 如果通过 `git clone` 下载仓库，通常已经存在名为 `origin` 的远程配置，可以跳过添加地址。
 
-如果从本地新建仓库，请先在 GitHub、GitLab 等平台创建一个空仓库，不要自动添加 README、许可证或 `.gitignore`。然后用实际地址替换示例地址：
+如果本地仓库尚未配置 `origin`，可以添加本项目的远程地址：
 
 ```bash
-git remote add origin https://github.com/YOUR_NAME/test_rep.git
+git remote add origin https://github.com/hxinyun0-beep/test_rep.git
 ```
+
+如果你没有本仓库的写入权限，请先在 GitHub 上 Fork 本仓库，再使用自己 Fork 的地址。若远程已有提交，建议通过第 1 步的克隆方式开始练习，以保留已有历史。
 
 完成至少一次本地提交后，将当前分支推送到远程，并建立跟踪关系：
 
