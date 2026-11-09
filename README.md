@@ -30,7 +30,7 @@ git --version
 将下面的示例地址替换为实际仓库地址，再执行：
 
 ```bash
-git clone https://github.com/YOUR_NAME/test_rep.git
+git clone [https://github.com/YOUR_NAME/test_rep.git](https://github.com/hxinyun0-beep/test_rep.git)
 cd test_rep
 ```
 
